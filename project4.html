@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Website Project</title>
+  <style>
+    /* Basic styling for the project portfolio section */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 0 20px;
+}
+
+.project {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-overview h1 {
+  color: #0e7b0e;
+}
+
+.project-features, .project-technologies, .project-gallery {
+  margin-top: 20px;
+}
+
+.project-features h2, .project-technologies h2, .project-gallery h2 {
+  color: #0e7b0e;
+  border-bottom: 2px solid #0e7b0e;
+  padding-bottom: 5px;
+}
+
+.project-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-features li {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: inline-block;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.project-gallery a{
+text-decoration: none;
+border: #0e7b0e 2px solid;
+border-radius: 5px;
+background-color: #0e7b0e;
+color: #fff;
+margin-left: 50px;
+padding: 1rem 1rem;
+}
+  </style>
+</head>
+<body>
+  <div class="project">
+    <button onclick="window.location.href='projects.html';">BACK</button>
+    <!-- Project Title and Overview -->
+    <section class="project-overview">
+      <h1>Website Project: "Safari" Web App</h1>
+      <p>This project showcases a complete web app I built from scratch, featuring user registration, login, personalized dashboard, and interactive pages for each service.</p>
+    </section>
+
+    <!-- Project Features Section -->
+    <section class="project-features">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Registration & Login System:</strong> Allows new users to register and returning users to log in securely.</li>
+        <li><strong>Account Dashboard:</strong> Displays user-specific options, such as balance, payment, and package management.</li>
+        <li><strong>Interactive Service Pages:</strong> Each service has its own page with detailed information and imagery.</li>
+        <li><strong>Responsive Design:</strong> Optimized for seamless viewing on desktop and mobile devices.</li>
+      </ul>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="project-technologies">
+      <h2>Technologies Used</h2>
+      <p>HTML, CSS, JavaScript, LocalStorage for user data handling, and custom media queries for responsive design.</p>
+    </section>
+
+    <!-- Project Process and Completion Gallery -->
+    <section class="project-gallery">
+      <h2>Process & Completion</h2>
+      <div class="gallery">
+        <img src="images/2024-11-13 (5).png" alt="Step 1 - Setting up login" />
+        <img src="images/2024-11-13 (4).png" alt="Step 2 - Creating the dashboard" />
+        <img src="images/2024-11-14 (1).png" alt="Final look of the website" />
+        <img src="images/2024-11-14 (2).png" alt="Final look of the website" />
+      
+     <a href="https://safari-gamma.vercel.app/">visit live site</a>
+     </div>
+    </section>
+  </div>
+</body>
+</html>

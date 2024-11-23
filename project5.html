@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Login & Registration Form - Project Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1A1A2E;
+            color: #E94560;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #F7D716;
+            text-shadow: 0px 0px 8px rgba(247, 215, 22, 0.8);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            color: #08D9D6;
+            margin-top: 20px;
+        }
+
+        .section p {
+            color: #F5F5F5;
+            margin-top: 10px;
+        }
+
+        .code-block {
+            background-color: #16213E;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow-x: auto;
+            color: #F5F5F5;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #E94560;
+            color: #FFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0px 0px 5px rgba(233, 69, 96, 0.8);
+        }
+
+        .button:hover {
+            background-color: #F7D716;
+            color: #1A1A2E;
+            box-shadow: 0px 0px 10px rgba(247, 215, 22, 0.8);
+        }
+
+        button.hover {
+    background-color: #1a1a1a; /* Change color as needed */
+    color: white;
+    border: none;
+    margin: 20px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button.hover:hover {
+    background-color: #960680; /* Darker shade on hover */
+}
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+    <button class="hover" onclick="window.location.href='projects.html';">BACK</button>
+</head>
+<body>
+    <div class="container">
+        <h1>Retro Login & Registration Form</h1>
+
+        <!-- Section: Project Overview -->
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>
+                The Retro Login & Registration Form project is a creative experiment inspired by '80s neon aesthetics. 
+                It combines smooth animations, responsive design, and a toggle feature for a seamless user experience. 
+                This project demonstrates a blend of frontend design and JavaScript functionality.
+            </p>
+            <img src="images/2024-11-22 (1).png" alt="Project Screenshot">
+        </div>
+
+        <!-- Section: Design Process -->
+        <div class="section">
+            <h2>Design Process</h2>
+            <p>
+                The design process began with a desire to create a form that stood out visually. 
+                Using vibrant purples and pinks, I aimed to capture the retro aesthetic while maintaining usability. 
+                Key decisions included:
+            </p>
+            <ul>
+                <li>Implementing a toggle for switching between login and registration modes.</li>
+                <li>Adding smooth animations for input fields and buttons.</li>
+                <li>Ensuring a responsive layout that adapts to all screen sizes.</li>
+            </ul>
+            <p>
+                Tools used included HTML, CSS, and JavaScript, along with creative inspiration from neon art and gaming interfaces.
+            </p>
+            <img src="images/2024-11-22.png" alt="Design Process">
+        </div>
+
+        <!-- Section: Challenges -->
+        <div class="section">
+            <h2>Challenges Faced</h2>
+            <p>
+                Every project comes with its set of challenges. For this form, the main hurdles included:
+            </p>
+            <ul>
+                <li>Creating a dynamic form toggle without breaking responsiveness.</li>
+                <li>Choosing colors that balanced retro vibes with accessibility.</li>
+                <li>Ensuring animations felt smooth and didn't affect performance.</li>
+            </ul>
+            <p>
+                Through testing and iterations, these challenges were overcome, leading to a final product I’m proud to showcase.
+            </p>
+        </div>
+
+        <!-- Section: Benefits -->
+        <div class="section">
+            <h2>Key Benefits</h2>
+            <p>
+                This project helped sharpen my skills in:
+            </p>
+            <ul>
+                <li>Using animations to enhance user experience.</li>
+                <li>Building interactive components with JavaScript.</li>
+                <li>Understanding how to design for both aesthetics and usability.</li>
+            </ul>
+        </div>
+
+        <!-- Section: The Code -->
+        <div class="section">
+            <h2>The Code</h2>
+            <p>
+                Below is a snippet of the code used to create the toggle functionality:
+            </p>
+            <div class="code-block">
+                <pre>
+let isLogin = true;
+
+function toggleForm() {
+    const title = document.getElementById("form-title");
+    const emailGroup = document.getElementById("email-group");
+
+    if (isLogin) {
+        title.textContent = "Retro Register";
+        emailGroup.classList.remove("hidden");
+    } else {
+        title.textContent = "Retro Login";
+        emailGroup.classList.add("hidden");
+    }
+    isLogin = !isLogin;
+}
+                </pre>
+            </div>
+            <a href="https://github.com/Deca-hue/retro-logi.git" class="button">View Full Code</a>
+        </div>
+
+        <!-- Section: Live Demo -->
+        <div class="section">
+            <h2>Live Demo</h2>
+            <p>
+                Want to see the form in action? Check out the live demo below:
+            </p>
+            <a href="https://retro-logi.vercel.app/" class="button">View Live Demo</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            © 2024 Your Name | All Rights Reserved
+        </footer>
+    </div>
+</body>
+</html>

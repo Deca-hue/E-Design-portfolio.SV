@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Project</title>
+    <link rel="icon" href="images/unity logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='projects.html';">BACK</button>
+
+    <!-- Logo Container with Fade-in Animation -->
+    <div class="logo-container fade-in">
+        <img src="images/unity logo.png" alt="Unity Logo Design">
+        <p class="description">logo designed to represent unity and forward progress.</p>
+    </div>
+
+    <!-- Project Brief Section -->
+    <div class="brief fade-in">
+        <h2>Project Brief</h2>
+        <p>This abstract logo design presents a dynamic and striking visual...</p>
+        <h3>Details</h3>
+        <p>The bold red "N" in the center is accompanied by an arrow symbol...</p>
+        <h3>Meaning</h3>
+        <p>This logo communicates a sense of movement and progression...</p>
+    </div>
+
+    <!-- Challenges Section -->
+    <div class="challenges fade-in">
+        <h2>Challenges & Solutions</h2>
+        <p>During the design process, several challenges arose...</p>
+        <p>Another challenge was ensuring that the spiral shapes conveyed...</p>
+        <p>The final challenge involved making the logo adaptable...</p>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback fade-in">
+        <h2>Feedback & Impact</h2>
+        <p>Since its introduction, the logo has made a significant positive impact...</p>
+        <p>Overall, the logo has not only strengthened the brand's identity...</p>
+    </div>
+       <!-- Logo Mockups Section -->
+       <div class="mockups fade-in">
+        <h2>Logo Mockups</h2>
+        <p>Explore various mockups showcasing the logo in real-world applications, illustrating its versatility and impact across different mediums.</p>
+        
+        <div class="mockup-gallery">
+            <img src="images/Artboard 1 Mockup (44).jpg" alt="Logo Mockup on Business Card">
+            <img src="images/Artboard 1 Mockup (45).jpg" alt="Logo Mockup on T-shirt">
+            <img src="images/Artboard 1 Mockup (46).jpg" alt="Logo Mockup on Signboard">
+            <img src="images/Artboard 1 Mockup (47).jpg" alt="Logo Mockup on Packaging">
+            <!-- Add more images as needed -->
+        <a href="https://unity-website-nine.vercel.app/">visit website</a>     
+        </div>
+        
+    </div>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedItems = document.querySelectorAll('.fade-in');
+            window.addEventListener('scroll', () => {
+                animatedItems.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        item.classList.add('visible');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
