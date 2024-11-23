@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The journey of building a custom music player, from the initial idea to the final product. Learn about the design process, challenges, and benefits.">
+    <title>Music Player Project Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#idea">The Idea</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <button type="button" onclick="location.href=`projects.html`">BACK</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content: Project History -->
+    <main>
+        <section class="project-history">
+            <h1>Project Journey: Music Player</h1>
+            
+            <!-- The Idea Section -->
+            <div id="idea" class="phase">
+                <h2>1. The Idea</h2>
+                <p>
+                    The initial idea for this project was to create a <strong>custom music player</strong> that allows users to upload and play audio files directly from their computer. 
+                    I aimed to combine my passion for frontend development with a practical, interactive application. The goal was to provide a simple, responsive music player with features like play/pause, volume control, and a dynamic playlist.
+                </p>
+                <img src="images/2024-11-23 (1).png" alt="Initial design concept of music player" class="phase-image">
+            </div>
+            
+            <!-- Design Process Section -->
+            <div id="design-process" class="phase">
+                <h2>2. The Design Process</h2>
+                <p>
+                    The design was initially focused on a clean and minimalistic user interface with a <strong>dark mode</strong> theme. I used HTML for the structure, CSS for styling, and JavaScript for the interactive elements. My goal was to make the player intuitive, so I focused on user-friendly controls like play/pause buttons and volume sliders.
+                </p>
+                <p><code>Example: <br> &lt;button id="play-btn"&gt;Play&lt;/button&gt;</code></p>
+                <img src="images/2024-11-23 (2).png" alt="Design process - dark mode and layout" class="phase-image">
+            </div>
+            
+            <!-- Challenges Section -->
+            <div id="challenges" class="phase">
+                <h2>3. The Challenges</h2>
+                <p>
+                    One of the major challenges I faced was handling file uploads. Initially, the player had trouble reading and playing the audio files. Using the <code>FileReader API</code>, I was able to ensure the player could load and play local files correctly. Another challenge was implementing <strong>localStorage</strong> to preserve the playlist even after a page refresh, which required working with JavaScript to save and load the playlist data.
+                </p>
+                <p><code>Example: <br> localStorage.setItem('playlist', JSON.stringify(playlist));</code></p>
+                <img src="images/2024-11-23.png" alt="Screenshot showing error handling and file upload process" class="phase-image">
+            </div>
+            
+            <!-- Benefits Section -->
+            <div id="benefits" class="phase">
+                <h2>4. Benefits and Outcome</h2>
+                <p>
+                    Completing this project not only gave me a valuable addition to my portfolio but also taught me new skills. I gained hands-on experience working with JavaScript for file handling, implementing the <code>Web Audio API</code>, and storing data with <strong>localStorage</strong>. The end result is a fully functional, aesthetically pleasing music player that allows users to interact with their personal music library seamlessly.
+                </p>
+                <img src="images/2024-11-23.png" alt="Final music player interface" class="phase-image">
+            </div>
+            
+            <!-- Conclusion Section -->
+            <div id="conclusion" class="phase">
+                <h2>5. Conclusion</h2>
+                <p>
+                    This project helped me grow as a developer by pushing me to solve real-world problems, from working with browser APIs to creating a smooth and interactive user interface. I'm proud of the final product, and it showcases my ability to turn an idea into a fully developed application.
+                </p>
+                <img src="images/2024-11-23 (1).png " alt=Final version of the music player" class="phase-image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
