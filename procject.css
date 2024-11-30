@@ -27,6 +27,12 @@ button.hover:hover {
     background-color: #960680; /* Darker shade on hover */
 }
 
+button.hover:focus,
+.project a:focus {
+    outline: 2px solid #960680;
+    outline-offset: 2px;
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -93,7 +99,7 @@ main {
 }
 
 .project a:hover {
-    background-color: #75055c;
+    background-color: #c0bdbf;
 }
 
 
@@ -104,4 +110,15 @@ footer {
     color: white;
     margin-top: 20px;
     font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }

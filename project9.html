@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="brick.css">
+  <button class="hover" onclick="window.location.href='projects.html';">BACK</button>
+</head>
+<body>
+  <section id="projects">
+    <div class="project">
+      <div class="project-info">
+        <h2>Brick Breaker Game</h2>
+        <p>
+          This Brick Breaker Game is a passion project designed to showcase my JavaScript skills and creativity. Below are the key steps I followed to create this interactive project:
+        </p>
+        <div class="code-snippet">
+          <h3>Code Snippet: Ball Movement</h3>
+          <pre>
+<code>
+let x = canvas.width / 2;
+let y = canvas.height - 30;
+let dx = 2;
+let dy = -2;
+
+function drawBall() {
+  ctx.beginPath();
+  ctx.arc(x, y, 10, 0, Math.PI * 2);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath();
+}
+</code>
+          </pre>
+        </div>
+        <ol>
+          <li><strong>Planning:</strong> Defined the game’s structure and user flow.</li>
+          <li><strong>Development:</strong> Created the game using HTML5 Canvas, JavaScript, and CSS for responsiveness.</li>
+          <li><strong>Enhancements:</strong> Added sound effects, persistent high scores, infinite levels, and mobile-friendly controls.</li>
+          <li><strong>Testing:</strong> Optimized for both small and large screens to ensure a seamless experience.</li>
+        </ol>
+        <p>
+          Try the game, check the source code, or view the embedded live demo below.
+        </p>
+        <a href="https://brick-game-chi.vercel.app/" class="btn">Play Live Demo</a>
+        <a href="https://github.com/Deca-hue/brick-game.git" class="btn secondary">View Source Code</a>
+      </div>
+      <div class="project-demo">
+        <iframe
+          src="https://brick-game-chi.vercel.app/"
+          title="Brick Breaker Game Demo"
+          class="demo-frame"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

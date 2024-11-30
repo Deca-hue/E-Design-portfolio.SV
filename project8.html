@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="podomoro.css">
+    <button class="hover" onclick="window.location.href='projects.html';">BACK</button>
+</head>
+<body>
+    
+    <div class="projects-section">
+        <h1>My Projects</h1>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="pomodoro-screenshot.png" alt="Pomodoro Timer Project">
+            </div>
+            <div class="project-details">
+                <h2>Pomodoro Timer</h2>
+                <p>A productivity tool built using HTML, CSS, and JavaScript to help manage work and break intervals using the Pomodoro Technique.</p>
+                <div class="process-steps">
+                    <h3>Development Process:</h3>
+                    <ul>
+                        <li>💡 **Idea & Planning**: Decided to create a timer to enhance productivity.</li>
+                        <li>🔧 **Design**: Crafted a futuristic UI with animations and a progress ring.</li>
+                        <li>💻 **Development**: Used JavaScript for timer logic and particle effects.</li>
+                        <li>🚀 **Final Touches**: Added productivity stats, inspirational quotes, and deployed the project.</li>
+                    </ul>
+                </div>
+                <div class="code-examples">
+                    <h3>Code Examples:</h3>
+                    <div class="code-block">
+                        <pre>
+<code class="html">
+&lt;!-- Timer HTML Structure --&gt;
+&lt;div class="timer"&gt;
+    &lt;div id="time"&gt;00:00&lt;/div&gt;
+    &lt;button onclick="startTimer()"&gt;Start&lt;/button&gt;
+    &lt;button onclick="pauseTimer()"&gt;Pause&lt;/button&gt;
+    &lt;button onclick="resetTimer()"&gt;Reset&lt;/button&gt;
+&lt;/div&gt;
+</code>
+                        </pre>
+                    </div>
+                    <div class="code-block">
+                        <pre>
+<code class="javascript">
+// Timer Logic Example
+let time = 25 * 60; // 25 minutes
+function startTimer() {
+    setInterval(() => {
+        time--;
+        document.getElementById('time').innerText = formatTime(time);
+    }, 1000);
+}
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+</code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://your-live-project-link.com" class="btn" target="_blank">View Live Project</a>
+                    <a href="https://github.com/Deca-hue/musicplayer.git" class="btn" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
